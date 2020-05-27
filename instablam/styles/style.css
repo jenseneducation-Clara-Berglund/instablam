@@ -1,26 +1,40 @@
 h1 {
   font-family: "Courier New", Courier, monospace;
-  font-size: large;
+  font-size: xx-large;
 }
 
 /* _______________________*/
 
 .mainContainer {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
 }
 
 /*________________________*/
-#cameraButtonContainer {
-  display: flex;
-  background-color: black;
-  padding: 2em;
-}
 
 #imageContainer {
   display: flex;
+  width: 10em;
+  height: 10em;
+  border-radius: 3em;
+  border-style: ridge;
+  border-color: grey;
+  margin-top: 2em;
+}
+
+#cameraButtonWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#cameraIcon {
+  margin-top: 3em;
+  height: 3em;
   width: 5em;
-  height: 5em;
-  border-radius: 2.5em;
-  background-color: yellow;
-  padding: 2em;
 }

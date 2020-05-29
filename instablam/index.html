@@ -7,16 +7,67 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="apple-touch-icon" href="./images/icons/icon-512x512.png" />
+    <script src="./lib/caman/caman.full.min.js"></script>
   </head>
   <body>
-    <script src="./js/index.js"></script>
-    <script src="./lib/caman/caman.full.min.js"></script>
     <div class="mainContainer">
       <h1>INSTABLAM!</h1>
-      <div id="imageContainer"></div>
+      <div>
+        <video id="pictureStream" playsinline></video>
+        <canvas data-caman-hidpi-disabled id="canvas"></canvas>
+      </div>
       <div id="cameraButtonWrapper">
         <img id="cameraIcon" src="./images/camera-flash.svg" />
       </div>
+      <div class="slideContainer">
+        <label for="brightness">Brightness</label>
+        <input
+          type="range"
+          min="-50"
+          max="50"
+          value="0"
+          class="slider"
+          id="brightness"
+        />
+        <label for="gamma">Gamma</label>
+        <input
+          type="range"
+          min="0"
+          max="5"
+          value="1"
+          class="slider"
+          id="gamma"
+        />
+        <label for="exposure">Exposure</label>
+        <input
+          type="range"
+          min="-100"
+          max="100"
+          value="0"
+          class="slider"
+          id="exposure"
+        />
+        <label for="hue">Hue</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          class="slider"
+          id="hue"
+        />
+        <label for="sepia">Sepia</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="1"
+          class="slider"
+          id="sepia"
+        />
+      </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

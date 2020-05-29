@@ -1,11 +1,11 @@
 {
   "name": "Instablam",
-  "theme_color": "#2196f3",
+  "theme_color": "grey",
   "background_color": "white",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
-  "start_url": "/",
+  "start_url": "/instablam/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
